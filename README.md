@@ -14,7 +14,7 @@ brew update
 brew install node
 ```
 
-The equivalent can be performed on Windows using [Chocolatey](https://brew.sh/) and the following command
+The equivalent can be performed on Windows using [Chocolatey](https://chocolatey.org/) and the following command
 
 ```
 choco upgrade chocolatey
