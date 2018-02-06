@@ -37,3 +37,22 @@ ionic serve
 ```
 
 After starting the app, you will be able to view it at localhost:8100.
+
+## Setup In Linux
+
+To setup in a linux environment, simply run the build_environemnt.sh bash script in the root folder to build all dependencies.
+
+```
+chmod +x build_environment.sh
+./build_environment.sh
+```
+
+After running the bash script, you can start up the app.
+
+```
+ionic serve
+```
+
+Once the app has been started, you will be able to view it at localhost:8100. 
+If the linux environment is being run in a vagrant virtual box using the included Vagrantfile, you can view the app at localhost:3000 (Forwarded port).
+
