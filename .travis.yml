@@ -3,6 +3,8 @@ notifications:
 
 sudo: required
 
+dsit: trusty
+
 language: node_js
 
 before_install: 
