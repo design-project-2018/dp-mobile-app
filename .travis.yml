@@ -4,6 +4,7 @@ notifications:
 language: node_js
 
 before_script:
+- rm -rf node_modules
 - npm install -g cordova ionic
 - npm install
 - ionic build
