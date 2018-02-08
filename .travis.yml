@@ -2,3 +2,8 @@ notifications:
     slack: designproject2018:rhfcpmTwX4UsvhNJ9jxyJ1P0
 
 language: node_js
+
+before_script:
+- npm install -g cordova ionic
+- npm install
+- ionic build
