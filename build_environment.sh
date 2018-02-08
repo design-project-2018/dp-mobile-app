@@ -4,4 +4,4 @@ sudo apt-get -y install nodejs
 sudo apt-get install -y gcc g++ build-essential
 sudo apt-get clean
 sudo npm install -g cordova ionic 
-sudo npm install --no-bin-links
+sudo npm install --no-bin-links --unsafe-perm
