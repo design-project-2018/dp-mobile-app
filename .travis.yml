@@ -3,4 +3,6 @@ notifications:
 
 language: node_js
 
-install: ./build_environment.sh
+before_install: 
+- chmod +x build_environment.sh
+- ./build_environment.sh
