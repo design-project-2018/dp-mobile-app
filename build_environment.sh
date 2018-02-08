@@ -6,6 +6,5 @@ sudo apt-get clean
 sudo npm install npm@latest -g
 sudo rm -rf node_modules
 sudo npm cache -f clean
-sudo ln -sf /usr/bin/nodejs /usr/bin/node
 sudo npm install -g cordova ionic 
 sudo npm install --no-bin-links --unsafe-perm
