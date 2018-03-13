@@ -1,9 +1,11 @@
-import { Component } from '@angular/core'
-import { NavController } from 'ionic-angular'
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { Service } from '../../app/service';
 
 @Component({
   selector: 'page-drive',
-  templateUrl: 'drive.html'
+  templateUrl: 'drive.html',
+  providers: [Service]
 })
 export class DrivePage {
 
@@ -11,7 +13,7 @@ export class DrivePage {
   public buttonColor: string
   public driving: boolean
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private service: Service) {
     this.buttonText = 'Start Recording'
     this.buttonColor = '#32db64'
     this.driving = false
@@ -22,10 +24,13 @@ export class DrivePage {
       this.buttonText = 'Stop Recording'
       this.buttonColor = '#f53d3d'
       this.driving = true
+      this.service.startRecording();
+      
     } else {
       this.buttonText = 'Start Recording'
       this.buttonColor = '#32db64'
       this.driving = false
+      this.service.stopRecording();
     }
   }
 
