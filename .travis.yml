@@ -1,14 +1,5 @@
 notifications:
     slack: designproject2018:rhfcpmTwX4UsvhNJ9jxyJ1P0
 
-sudo: required
-
-dsit: trusty
-
 language: node_js
-node_js:
-  - "8"
 
-before_install: 
-  - chmod +x build_environment.sh
-  - ./build_environment.sh
